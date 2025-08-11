@@ -60,11 +60,11 @@ Best Results:
 | Configuration                                   | Classes | Superpixels |   IoU  | F1-score |
 | ----------------------------------------------- | :-----: | :---------: | :----: | :------: |
 | **U-Net + DINOv2 encoder + embeddings**         |    6    |      No     | 0.4711 |  0.7462  |
-| **U-Net + ResNet-50 encoder + embeddings + SP** |    3    |     Yes     | 0.7400 |  0.8714  |
+| **U-Net + ResNet-50 encoder + embeddings** |    3    |      No     | 0.7743 |  0.8982  |
 
 * Six-class task: best achieved by DINOv2 backbone with global + positional embeddings.
 
-* Three-class task (Other / Building / Damage): best achieved by ResNet-50 backbone with embeddings and superpixel smoothing.
+* Three-class task (Other / Building / Damage): best achieved by ResNet-50 backbone with embeddings.
 
 **Notebooks**
 All experiments are fully reproducible via the Colab notebooks in this repo, each corresponding to one encoder and one experimental setting (embeddings on/off):
